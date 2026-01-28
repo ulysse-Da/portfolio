@@ -1,0 +1,168 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary: #6c63ff;
+    --dark: #1f1f2e;
+    --light: #f5f6fa;
+    --text: #333;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--primary), #857dff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    animation: slideDown 1s ease;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* NAV */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+    animation: fadeUp 1s ease;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.12);
+}
+
+/* LISTE COMPÉTENCES */
+.liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
+.liste li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+}
+
+.liste li:hover {
+    transform: scale(1.05);
+    color: var(--primary);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
