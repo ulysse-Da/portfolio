@@ -902,6 +902,64 @@ p {
   margin: 0;
 }
 
+.activity-photo-card {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.activity-photo {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  max-height: 320px;
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.02);
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.activity-photo-contain {
+  object-fit: contain;
+  padding: 18px;
+}
+
+.documentation-grid {
+  grid-template-columns: 1fr;
+}
+
+.documentation-photo-card {
+  gap: 16px;
+}
+
+.documentation-photo {
+  min-height: 420px;
+  max-height: 560px;
+  padding: 10px;
+  object-position: center top;
+}
+
+.documentation-grid .panel-card {
+  padding: 20px;
+}
+
+.brassage-grid .activity-photo,
+.brassage-photo {
+  min-height: 340px;
+  max-height: 440px;
+  padding: 8px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.activity-photo-card figcaption {
+  color: var(--muted);
+  text-align: center;
+}
+
 strong {
   color: var(--text);
 }
