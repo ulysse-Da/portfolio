@@ -9,32 +9,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-blue">
+<body class="home-blue site-animated home-page">
   <div class="page-shell">
-    <div class="site-banner">Portfolio etudiant · BTS SIO option SISR</div>
+    <div class="site-topbar">
+      <div class="site-banner">Portfolio etudiant · BTS SIO option SISR</div>
 
-    <header class="site-header">
-      <a class="brand" href="index.html">Portfolio</a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a class="active" href="index.html">Accueil</a>
-        <a href="cv.html">CV</a>
-        <a href="stage1.html">Stage 1</a>
-        <a href="stage2.html">Stage 2</a>
-        <a href="veille.html">Veille</a>
-      </nav>
-    </header>
+      <header class="site-header">
+        <a class="brand" href="index.html">Portfolio</a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a class="active" href="index.html">Accueil</a>
+          <a href="cv.html">CV</a>
+          <a href="stage1.html">Stage 1</a>
+          <a href="stage2.html">Stage 2</a>
+          <a href="veille.html">Veille</a>
+        </nav>
+      </header>
+    </div>
 
     <main>
       <section class="hero hero-home">
-        <p class="hero-kicker">Etudiant BTS SIO option SISR</p>
-        <h1>Ulysse Daganaud</h1>
-        <p class="hero-title">Reseaux &amp; Infrastructures</p>
-        <p class="lead">
+        <p class="hero-kicker home-hero-line">Etudiant BTS SIO option SISR</p>
+        <h1 class="home-hero-line">Ulysse Daganaud</h1>
+        <p class="hero-title home-hero-line">Reseaux &amp; Infrastructures</p>
+        <p class="lead home-hero-line">
           Etudiant en deuxieme annee de BTS SIO option SISR, je m'interesse particulierement
           aux reseaux, aux systemes, a l'hebergement et aux outils techniques qui font vivre
           une infrastructure au quotidien.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions home-hero-line">
           <a class="button primary" href="cv.html">Voir mon CV</a>
           <a class="button secondary" href="stage1.html">Mes stages</a>
         </div>
@@ -185,5 +187,6 @@
       </section>
     </main>
   </div>
+  <script src="interactions.js"></script>
 </body>
 </html>
