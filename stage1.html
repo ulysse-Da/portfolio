@@ -9,49 +9,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-blue">
+<body class="home-blue site-animated">
   <div class="page-shell">
+    <div class="site-topbar">
     <div class="site-banner">Portfolio etudiant · BTS SIO option SISR</div>
 
-    <header class="site-header">
+    <header class="site-header site-header-stage">
       <a class="brand" href="index.html">Portfolio</a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="cv.html">CV</a>
-        <a class="active" href="stage1.html">Stage 1</a>
-        <a href="stage2.html">Stage 2</a>
-        <a href="veille.html">Veille</a>
-      </nav>
+      <div class="site-header-actions">
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="cv.html">CV</a>
+          <a class="active" href="stage1.html">Stage 1</a>
+          <a href="stage2.html">Stage 2</a>
+          <a href="veille.html">Veille</a>
+        </nav>
+
+        <nav class="activity-shortcut activity-shortcut-inline" aria-label="Selection des activites">
+          <button class="activity-shortcut-toggle" type="button" aria-label="Afficher les activites" aria-expanded="false" aria-controls="activity-shortcut-panel">
+            <span class="activity-shortcut-kicker">Acces rapide</span>
+            <span class="activity-shortcut-text">Aller a une activite</span>
+          </button>
+
+          <div class="activity-shortcut-panel" id="activity-shortcut-panel">
+            <a href="#activite-1">Activite 1<span>Gestion GLPI</span></a>
+            <a href="#activite-2">Activite 2<span>Raspberry Pi</span></a>
+            <a href="#activite-3">Activite 3<span>Open WebUI</span></a>
+            <a href="#activite-4">Activite 4<span>Fibre et baie</span></a>
+          </div>
+        </nav>
+      </div>
     </header>
+
+    </div>
 
     <main>
       <section class="page-hero">
         <p class="hero-kicker">Premiere annee de BTS</p>
         <h1>Stage 1 - Calitom</h1>
-        <p class="lead">
-          Cette page presente plusieurs activites realisees pendant mon stage de premiere
-          annee chez Calitom. Elles montrent a la fois des missions de gestion de parc,
-          d'intervention technique et d'adaptation a des besoins concrets sur le terrain.
-        </p>
       </section>
 
       <section class="grid three-columns">
         <article class="panel-card">
           <p class="mini-label">Structure</p>
           <span class="metric-value">Calitom</span>
-          <p>Structure dans laquelle j'ai pu observer des besoins concrets en gestion de parc, support et maintenance informatique.</p>
         </article>
 
         <article class="panel-card">
           <p class="mini-label">Periode</p>
           <span class="metric-value">Juin 2026</span>
-          <p>Stage de premiere annee de BTS SIO, dans la continuite de mon orientation vers l'option SISR.</p>
         </article>
 
         <article class="panel-card">
           <p class="mini-label">Activites</p>
           <span class="metric-value">4 missions detaillees</span>
-          <p>GLPI et RAM, atelier Raspberry Pi 4, projet IA avec Open WebUI, puis deploiement fibre et Wi-Fi dans un batiment.</p>
         </article>
       </section>
 
@@ -80,14 +91,10 @@
         </div>
       </section>
 
-      <section class="surface">
+      <section id="activite-1" class="surface activity-target">
         <div class="section-heading">
           <p class="section-kicker">Activite 1</p>
           <h2>Gestion du patrimoine informatique avec GLPI</h2>
-          <p>
-            Cette activite m'a permis de participer a la fois au suivi du parc et a une intervention
-            materielle simple mais utile, en lien direct avec les besoins reels des utilisateurs.
-          </p>
         </div>
 
         <div class="grid two-columns">
@@ -129,10 +136,6 @@
         <div class="section-heading">
           <p class="section-kicker">Illustrations</p>
           <h2>Photos de l'activite 1</h2>
-          <p>
-            Ces emplacements pourront etre remplaces par des photos du materiel, de l'intervention ou
-            d'un exemple de suivi dans GLPI.
-          </p>
         </div>
 
         <div class="grid two-columns">
@@ -152,36 +155,10 @@
         </div>
       </section>
 
-      <section class="grid two-columns">
-        <article class="panel-card">
-          <p class="mini-label">Competences mobilisees - Activite 1</p>
-          <ul class="bullet-list">
-            <li>Utilisation d'un outil de gestion de parc avec GLPI</li>
-            <li>Verification et classement du patrimoine informatique</li>
-            <li>Identification des besoins materiels sur les postes</li>
-            <li>Manipulation de composants et ajout de RAM</li>
-          </ul>
-        </article>
-
-        <article class="panel-card">
-          <p class="mini-label">Bilan - Activite 1</p>
-          <p>
-            Cette activite m'a permis de mieux comprendre l'importance du suivi de parc, de la
-            tracabilite du materiel et de la preparation des postes. Elle m'a aussi montre qu'une
-            intervention simple, comme une mise a niveau de RAM, peut avoir un impact concret pour les utilisateurs.
-          </p>
-        </article>
-      </section>
-
-      <section class="surface">
+      <section id="activite-2" class="surface activity-target">
         <div class="section-heading">
           <p class="section-kicker">Activite 2</p>
           <h2>Adaptation d'un terminal Raspberry Pi pour un atelier pedagogique</h2>
-          <p>
-            Cette activite concernait un dispositif installe a Atrion, le centre de tri de Calitom,
-            dans le cadre d'un atelier pour sensibiliser les enfants aux emballages plastiques
-            et au recyclage.
-          </p>
         </div>
 
         <div class="grid two-columns">
@@ -253,60 +230,37 @@
         <div class="section-heading">
           <p class="section-kicker">Illustrations</p>
           <h2>Photos de l'activite 2</h2>
-          <p>
-            Ces emplacements pourront etre remplaces par des photos du poste de travail,
-            du Raspberry Pi, du scanner ou de l'installation de l'atelier.
-          </p>
         </div>
 
         <div class="grid two-columns">
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Emplacement illustration 1</span>
-              <p>Exemple : Raspberry Pi ou terminal utilise</p>
-            </div>
+            <figure class="activity-photo-card">
+              <img
+                class="activity-photo"
+                src="images/raspberry-pi-4.jpg"
+                alt="Raspberry Pi 4 utilise pour l'activite"
+              >
+              <figcaption>Raspberry Pi 4 utilise pour le terminal de l'atelier</figcaption>
+            </figure>
           </article>
 
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Emplacement illustration 2</span>
-              <p>Exemple : scanner d'articles ou atelier pedagogique</p>
-            </div>
+            <figure class="activity-photo-card">
+              <img
+                class="activity-photo activity-photo-contain"
+                src="images/lecteur-code-barres.png"
+                alt="Lecteur de code-barres utilise pour scanner les articles"
+              >
+              <figcaption>Lecteur de code-barres utilise pendant l'atelier</figcaption>
+            </figure>
           </article>
         </div>
       </section>
 
-      <section class="grid two-columns">
-        <article class="panel-card">
-          <p class="mini-label">Competences mobilisees - Activite 2</p>
-          <ul class="bullet-list">
-            <li>Diagnostic d'un probleme lie a un peripherique</li>
-            <li>Adaptation de la configuration d'un Raspberry Pi</li>
-            <li>Recherche de solution malgre une documentation insuffisante</li>
-            <li>Explication claire d'une demarche technique a une equipe</li>
-          </ul>
-        </article>
-
-        <article class="panel-card">
-          <p class="mini-label">Bilan - Activite 2</p>
-          <p>
-            Cette activite m'a montre qu'il faut parfois proposer une solution simple et efficace
-            pour maintenir un service operationnel. Elle m'a aussi permis de travailler ma capacite
-            a expliquer une decision technique a des personnes qui n'ont pas toujours le meme niveau
-            de connaissance informatique.
-          </p>
-        </article>
-      </section>
-
-      <section class="surface">
+      <section id="activite-3" class="surface activity-target">
         <div class="section-heading">
           <p class="section-kicker">Activite 3</p>
           <h2>Projet IA avec mise en place de Open WebUI</h2>
-          <p>
-            Cette activite portait sur la mise en place de Open WebUI dans le cadre d'un projet
-            interne. Elle s'appuyait sur une procedure d'installation deja preparee par un collegue
-            et sur le respect d'un cahier des charges.
-          </p>
         </div>
 
         <div class="grid two-columns">
@@ -379,18 +333,18 @@
         <div class="section-heading">
           <p class="section-kicker">Illustration</p>
           <h2>Illustration de l'activite 3</h2>
-          <p>
-            Cet emplacement pourra etre remplace par une capture de l'installation,
-            de l'interface Open WebUI ou d'un document de suivi du projet.
-          </p>
         </div>
 
         <div class="grid two-columns">
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Emplacement illustration</span>
-              <p>Exemple : interface Open WebUI ou etape d'installation</p>
-            </div>
+            <figure class="activity-photo-card">
+              <img
+                class="activity-photo activity-photo-contain"
+                src="images/interface open web ui.png"
+                alt="Interface Open WebUI mise en place pendant le projet IA"
+              >
+              <figcaption>Interface Open WebUI utilisee dans le cadre du projet IA</figcaption>
+            </figure>
           </article>
 
           <article class="panel-card">
@@ -404,36 +358,10 @@
         </div>
       </section>
 
-      <section class="grid two-columns">
-        <article class="panel-card">
-          <p class="mini-label">Competences mobilisees - Activite 3</p>
-          <ul class="bullet-list">
-            <li>Suivi d'une procedure d'installation technique</li>
-            <li>Validation d'etapes a partir d'un cahier des charges</li>
-            <li>Proposition d'ajustements sur une solution en cours de mise en place</li>
-            <li>Explication des problemes rencontres et de leurs impacts</li>
-          </ul>
-        </article>
-
-        <article class="panel-card">
-          <p class="mini-label">Bilan - Activite 3</p>
-          <p>
-            Cette activite m'a permis de decouvrir un projet autour de l'IA dans un contexte concret.
-            Elle a renforce ma rigueur dans le suivi de procedure, mon esprit d'analyse et ma capacite
-            a expliquer clairement les difficultes techniques rencontrees.
-          </p>
-        </article>
-      </section>
-
-      <section class="surface">
+      <section id="activite-4" class="surface activity-target">
         <div class="section-heading">
           <p class="section-kicker">Activite 4</p>
           <h2>Deploiement de la fibre et reorganisation d'une baie de brassage</h2>
-          <p>
-            Cette activite a ete realisee avec un collegue dans le cadre d'un projet de deploiement
-            reseau dans le batiment B9. Elle associait installation, organisation physique de la baie
-            et configuration liee aux bornes Wi-Fi.
-          </p>
         </div>
 
         <div class="grid two-columns">
@@ -506,25 +434,29 @@
         <div class="section-heading">
           <p class="section-kicker">Illustrations</p>
           <h2>Extraits de la documentation</h2>
-          <p>
-            Ces emplacements pourront accueillir quelques passages de la documentation realisee
-            pendant l'activite.
-          </p>
         </div>
 
-        <div class="grid two-columns">
+        <div class="grid two-columns documentation-grid">
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Emplacement documentation 1</span>
-              <p>Exemple : schema, consigne ou etape importante</p>
-            </div>
+            <figure class="activity-photo-card documentation-photo-card">
+              <img
+                class="activity-photo activity-photo-contain documentation-photo"
+                src="images/doc borne cisco.png"
+                alt="Extrait de documentation Cisco utilise pour l'intervention"
+              >
+              <figcaption>Documentation Cisco utilisee pour l'installation</figcaption>
+            </figure>
           </article>
 
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Emplacement documentation 2</span>
-              <p>Exemple : extrait de procedure ou note technique</p>
-            </div>
+            <figure class="activity-photo-card documentation-photo-card">
+              <img
+                class="activity-photo activity-photo-contain documentation-photo"
+                src="images/doc borne wifi 2.png"
+                alt="Extrait de documentation pour la configuration de borne Wi-Fi"
+              >
+              <figcaption>Documentation de borne Wi-Fi employee pendant l'intervention</figcaption>
+            </figure>
           </article>
         </div>
       </section>
@@ -533,50 +465,35 @@
         <div class="section-heading">
           <p class="section-kicker">Avant / apres</p>
           <h2>Baie de brassage</h2>
-          <p>
-            Ces emplacements pourront montrer l'etat de la baie avant la reorganisation
-            puis apres l'installation du bloc fibre.
-          </p>
         </div>
 
-        <div class="grid two-columns">
+        <div class="grid two-columns brassage-grid">
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Baie avant</span>
-              <p>Exemple : organisation initiale de la baie</p>
-            </div>
+            <figure class="activity-photo-card">
+              <img
+                class="activity-photo brassage-photo"
+                src="images/baie de brassage avant.jpg"
+                alt="Baie de brassage avant la reorganisation"
+              >
+              <figcaption>Baie de brassage avant la reorganisation</figcaption>
+            </figure>
           </article>
 
           <article class="panel-card">
-            <div class="photo-placeholder">
-              <span>Baie apres</span>
-              <p>Exemple : baie reordonnee avec integration de la fibre</p>
-            </div>
+            <figure class="activity-photo-card">
+              <img
+                class="activity-photo"
+                src="images/baie de brassage aprés.jpg"
+                alt="Baie de brassage apres la reorganisation"
+              >
+              <figcaption>Baie de brassage apres la reorganisation</figcaption>
+            </figure>
           </article>
         </div>
       </section>
 
-      <section class="grid two-columns">
-        <article class="panel-card">
-          <p class="mini-label">Competences mobilisees - Activite 4</p>
-          <ul class="bullet-list">
-            <li>Participation a un deploiement reseau en environnement reel</li>
-            <li>Reorganisation physique d'une baie de brassage</li>
-            <li>Mise en place de bornes Wi-Fi sur les VLAN adaptes</li>
-            <li>Redaction d'une documentation technique de suivi</li>
-          </ul>
-        </article>
-
-        <article class="panel-card">
-          <p class="mini-label">Bilan - Activite 4</p>
-          <p>
-            Cette activite m'a permis de participer a une intervention reseau plus complete,
-            en combinant organisation materielle, logique d'infrastructure et documentation.
-            Elle a renforce ma vision concrete du travail a mener sur une installation reseau.
-          </p>
-        </article>
-      </section>
     </main>
   </div>
+  <script src="interactions.js"></script>
 </body>
 </html>
