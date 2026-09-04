@@ -1,34 +1,189 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Alex Martin</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Alex Martin</h1>
-        <p>Développeur Web Junior</p>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="experience.html">Expérience</a>
-            <a href="cv.html">CV</a>
-        </nav>
+<body class="home-blue">
+  <div class="page-shell">
+    <div class="site-banner">Portfolio etudiant · BTS SIO option SISR</div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Portfolio</a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a class="active" href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="stage1.html">Stage 1</a>
+        <a href="stage2.html">Stage 2</a>
+        <a href="veille.html">Veille</a>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenue sur mon portfolio</h2>
-            <p>
-                Je suis un développeur web passionné par la création de sites modernes,
-                performants et accessibles. Ce portfolio présente mon parcours fictif,
-                mes compétences et mon expérience.
-            </p>
-        </section>
-    </main>
+      <section class="hero hero-home">
+        <p class="hero-kicker">Etudiant BTS SIO option SISR</p>
+        <h1>Ulysse Daganaud</h1>
+        <p class="hero-title">Reseaux &amp; Infrastructures</p>
+        <p class="lead">
+          Etudiant en deuxieme annee de BTS SIO option SISR, je m'interesse particulierement
+          aux reseaux, aux systemes, a l'hebergement et aux outils techniques qui font vivre
+          une infrastructure au quotidien.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="cv.html">Voir mon CV</a>
+          <a class="button secondary" href="stage1.html">Mes stages</a>
+        </div>
+      </section>
 
-    <footer>
-        <p>© 2026 - Alex Martin (données fictives)</p>
-    </footer>
+      <section class="grid three-columns">
+        <article class="panel-card">
+          <p class="mini-label">Profil</p>
+          <span class="metric-value">Deuxieme annee</span>
+          <p>
+            Je construis mon projet professionnel autour des infrastructures numeriques,
+            du support technique et de l'administration reseau.
+          </p>
+        </article>
+
+        <article class="panel-card">
+          <p class="mini-label">Centres d'interet</p>
+          <ul class="pill-list">
+            <li>Reseaux</li>
+            <li>Hebergement</li>
+            <li>IA</li>
+            <li>Impression 3D</li>
+          </ul>
+        </article>
+
+        <article class="panel-card">
+          <p class="mini-label">Objectif</p>
+          <span class="metric-value">Approfondir la SISR</span>
+          <p>
+            Renforcer mes competences en systemes, en administration et en environnement
+            technique a travers les stages, les projets et la veille.
+          </p>
+        </article>
+      </section>
+
+      <section class="surface">
+        <div class="section-heading">
+          <p class="section-kicker">Presentation</p>
+          <h2>A propos de moi</h2>
+          <p>
+            J'ai commence mon parcours dans le numerique en bac pro SN systemes numeriques.
+            Cette base m'a permis de decouvrir d'abord le materiel et les environnements techniques,
+            puis d'evoluer progressivement vers les reseaux, l'hebergement et l'infrastructure.
+          </p>
+        </div>
+
+        <div class="grid two-columns">
+          <article class="panel-card">
+            <h3>Ce qui m'attire dans l'informatique</h3>
+            <p>
+              J'aime comprendre comment un reseau est organise, comment un service est heberge,
+              comment les equipements communiquent entre eux et comment maintenir un environnement stable.
+            </p>
+          </article>
+
+          <article class="panel-card">
+            <h3>Ce portfolio</h3>
+            <p>
+              Ce site presente mon parcours, mes experiences de stage, mon CV et ma veille technologique.
+              Il sera complete et ajuste progressivement pour refleter mon evolution en BTS SIO.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface">
+        <div class="section-heading">
+          <p class="section-kicker">Parcours</p>
+          <h2>Mon parcours</h2>
+          <p>
+            J'ai reorganise mon parcours en grandes etapes pour montrer plus clairement
+            l'evolution entre l'audiovisuel technique, l'informatique reseau et la specialisation SISR.
+          </p>
+        </div>
+
+        <div class="journey">
+          <article class="journey-item">
+            <div class="journey-card">
+              <div class="journey-top">
+                <span class="journey-year">2022 - 2025</span>
+                <p class="mini-label">Lycee</p>
+              </div>
+              <h3>Bac Pro SN - Systemes Numeriques</h3>
+              <p>
+                Debut de mon parcours technique avec une formation orientee vers le materiel,
+                le diagnostic de panne, le cablage, les composants et les installations numeriques.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-card">
+              <div class="journey-top">
+                <span class="journey-year">2023 - 2025</span>
+                <p class="mini-label">Stages lycee</p>
+              </div>
+              <h3>Trois experiences de terrain</h3>
+              <p>
+                Stage chez DMT en audiovisuel professionnel, stage chez MP Son et Lumiere
+                sur des prestations evenementielles, puis stage de 6 semaines a Calitom
+                en informatique reseaux.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-card">
+              <div class="journey-top">
+                <span class="journey-year">Sept. 2025</span>
+                <p class="mini-label">BTS</p>
+              </div>
+              <h3>Entree en BTS SIO</h3>
+              <p>
+                Poursuite de mon orientation dans l'informatique avec une formation plus
+                specialisee sur les services, les systemes et les infrastructures.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-card">
+              <div class="journey-top">
+                <span class="journey-year">Janv. - Juin 2026</span>
+                <p class="mini-label">Specialisation</p>
+              </div>
+              <h3>Choix de l'option SISR et stage a Calitom</h3>
+              <p>
+                Confirmation de mon interet pour les solutions d'infrastructure, systemes et reseaux,
+                puis realisation d'un stage de premiere annee qui sera developpe dans la page Stage 1.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <div class="journey-card">
+              <div class="journey-top">
+                <span class="journey-year">Sept. 2026</span>
+                <p class="mini-label">Deuxieme annee</p>
+              </div>
+              <h3>Poursuite du BTS SIO option SISR</h3>
+              <p>
+                Entree en deuxieme annee avec l'objectif de consolider mes competences
+                en administration, en support technique et en environnement reseau.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

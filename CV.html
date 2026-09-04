@@ -1,38 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Alex Martin</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Curriculum Vitae</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="experience.html">Expérience</a>
-            <a href="cv.html">CV</a>
-        </nav>
+<body class="home-blue">
+  <div class="page-shell">
+    <div class="site-banner">Portfolio etudiant · BTS SIO option SISR</div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Portfolio</a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a class="active" href="cv.html">CV</a>
+        <a href="stage1.html">Stage 1</a>
+        <a href="stage2.html">Stage 2</a>
+        <a href="veille.html">Veille</a>
+      </nav>
     </header>
 
     <main>
-        <section class="card">
-            <h2>Informations personnelles</h2>
-            <p>Nom : Alex Martin</p>
-            <p>Email : alex.martin@email.com</p>
-            <p>Ville : Paris</p>
-        </section>
+      <section class="page-hero">
+        <p class="hero-kicker">CV numerique</p>
+        <h1>Curriculum Vitae</h1>
+        <p class="lead">
+          Etudiant en BTS SIO option SISR, je developpe un profil oriente reseaux,
+          systemes et infrastructure, avec un interet fort pour les environnements techniques
+          et le support de terrain.
+        </p>
+      </section>
 
-        <section class="card">
-            <h2>Formation</h2>
-            <p>BTS Services Informatiques – 2023</p>
-            <p>Licence Développement Web – 2025</p>
-        </section>
+      <section class="resume-layout">
+        <aside class="resume-sidebar">
+          <article class="panel-card">
+            <p class="mini-label">Contact</p>
+            <ul class="contact-list">
+              <li>
+                <strong>Telephone</strong>
+                <span>07 65 79 36 89</span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <span>daganaud.ulysse@gmail.com</span>
+              </li>
+              <li>
+                <strong>Adresse</strong>
+                <span>14 rue de la Paix, 16110 La Rochefoucauld</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <p class="mini-label">Atouts</p>
+            <ul class="bullet-list">
+              <li>Serieux et rigueur</li>
+              <li>Capacite d'adaptation</li>
+              <li>Motivation pour apprendre</li>
+              <li>Interet pour les environnements techniques</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <p class="mini-label">Centres d'interet</p>
+            <ul class="pill-list">
+              <li>Reseaux</li>
+              <li>Hebergement</li>
+              <li>Impression 3D</li>
+              <li>Informatique</li>
+              <li>Kayak</li>
+              <li>Randonnee</li>
+            </ul>
+          </article>
+        </aside>
+
+        <div class="resume-main">
+          <article class="panel-card">
+            <p class="mini-label">Profil</p>
+            <h2>Recherche de stage et progression technique</h2>
+            <p>
+              Je suis actuellement en BTS SIO, option SISR. Je souhaite poursuivre mon
+              developpement dans les domaines des systemes, des reseaux et de l'infrastructure.
+              Les stages sont pour moi l'occasion de mettre en pratique les connaissances vues en formation
+              tout en gagnant en autonomie dans un cadre professionnel.
+            </p>
+          </article>
+
+          <article class="panel-card">
+            <p class="mini-label">Formations</p>
+            <ul class="timeline-list">
+              <li>
+                <strong>2025 - 2027 | BTS SIO option SISR</strong>
+                <p>Formation en cours axee sur les solutions d'infrastructure, les systemes et les reseaux.</p>
+              </li>
+              <li>
+                <strong>2022 - 2025 | Bac Pro SN systemes numeriques</strong>
+                <p>Formation technique avec mention bien, centree sur le materiel, le diagnostic et les installations numeriques.</p>
+              </li>
+              <li>
+                <strong>2025 | Habilitation electrique B1V / BR</strong>
+                <p>Validation theorique en securite electrique.</p>
+              </li>
+              <li>
+                <strong>2024 | BAFA formation generale</strong>
+                <p>Formation generale effectuee avec Familles Rurales.</p>
+              </li>
+              <li>
+                <strong>2021 | DNB mention tres bien</strong>
+                <p>Obtention du diplome national du brevet avec mention tres bien.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <p class="mini-label">Experiences</p>
+            <ul class="timeline-list">
+              <li>
+                <strong>2026 | Calitom - informatique reseaux</strong>
+                <p>Stage de premiere annee de BTS oriente infrastructure, support et environnement reseau.</p>
+              </li>
+              <li>
+                <strong>2025 | Calitom - stage de lycee</strong>
+                <p>Immersion de 6 semaines dans un contexte plus proche de l'informatique et des reseaux.</p>
+              </li>
+              <li>
+                <strong>2024 | CID Charente Informatique Diffusion</strong>
+                <p>Experience autour du depannage d'ordinateurs et de l'assistance technique.</p>
+              </li>
+              <li>
+                <strong>2023 - 2024 | DMT et MP Son et Lumiere</strong>
+                <p>Experiences en audiovisuel professionnel, prestations techniques et environnement evenementiel.</p>
+              </li>
+              <li>
+                <strong>Experience complementaire | Calitom</strong>
+                <p>Job d'ete en tant qu'operateur de tri, utile pour l'autonomie, l'organisation et le sens des responsabilites.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="grid two-columns">
+            <article class="panel-card">
+              <p class="mini-label">Competences</p>
+              <ul class="bullet-list">
+                <li>Administration Windows et Linux</li>
+                <li>Support technique et diagnostic</li>
+                <li>Cablage et environnement materiel</li>
+                <li>Documentation et compte rendu</li>
+                <li>Bases en virtualisation et reseaux</li>
+              </ul>
+            </article>
+
+            <article class="panel-card">
+              <p class="mini-label">MOOC et outils</p>
+              <ul class="bullet-list">
+                <li>ROOT ME</li>
+                <li>CNIL - RGPD</li>
+                <li>Cisco Packet Tracer en cours</li>
+                <li>PIX - 500 points</li>
+                <li>Anglais niveau scolaire</li>
+              </ul>
+            </article>
+          </article>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>© 2026 - Alex Martin</p>
-    </footer>
+  </div>
 </body>
 </html>
